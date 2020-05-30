@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1:nth-child(1) {
+            color: red;
+        }
+
+        h1:nth-last-of-type(1) {
+            color: blue;
+        }
+
+        /*nie działa, bo żaden p nie jest 1 dzieckiem*/
+        p:nth-child(3) {
+            color: red;
+        }
+
+        p:nth-child(2) {
+            color: red;
+        }
+
+        p:nth-of-type(3) {
+            font-size: 40px;
+        }
+
+        /*nie ma p, które jest ostatnim elementem*/
+        p:nth-last-child(1) {
+            color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Tytuł</h1>
+    <p class="name">Nowak</p>
+    <p class="intro">wstęp do artykułu</p>
+    <p class="s1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos magni saepe quasi culpa quibusdam esse quo ipsa deleniti, quidem consequuntur labore error cum. Fuga, sequi quis dolore unde porro accusamus nobis provident, ullam explicabo, expedita exercitationem quod. Autem soluta reprehenderit aut ex eligendi alias iusto magni consectetur odit nostrum ut sint culpa, consequuntur nulla nesciunt, accusantium eveniet quod ea? Sint voluptate non, deserunt omnis vero fuga ab minus minima adipisci, libero maiores quae dolor. Itaque veritatis magni consequatur, voluptatem aliquam odit, sequi ipsa ut, assumenda et, recusandae! Aperiam laborum nobis, accusamus, in aspernatur reiciendis laboriosam, iure, placeat labore consectetur eveniet.</p>
+    <footer>siema</footer>
+</body>
+
+</html>

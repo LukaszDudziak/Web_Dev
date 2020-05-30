@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: black;
+
+            /*            ustawienie overflow: hidden*/
+            /*            overflow: hidden;*/
+        }
+
+        nav ul {
+            list-style: none;
+            /* sztywne ustawienie wielkości rodzica */
+            /*            height: 100px;*/
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            margin: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: #fff;
+        }
+
+        /* element, który czyści floaty
+        .clear {
+            clear: both;
+        }
+*/
+        /*
+        
+        utworzenie pseudoklasy do czyszczenia floatów
+*/
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="clearfix">
+            <li><a href="#">element 1</a></li>
+            <li><a href="#">element 2</a></li>
+            <li><a href="#">element 3</a></li>
+            <li><a href="#">element 4</a></li>
+            <li><a href="#">element 5</a></li>
+            <!--
+            dodanie pustego elementu "clear"
+            <div class="clear"></div>
+-->
+        </ul>
+    </nav>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente error dolor atque commodi? Dolorem illum iste quam, molestias dignissimos odit repellendus nulla labore, commodi quia possimus soluta libero maiores fuga nostrum natus voluptatum. Inventore dolores, quas ratione libero reprehenderit saepe maiores quod. Minima, debitis dolorum voluptas ut enim blanditiis, officia, quis iure error velit quidem architecto praesentium et reprehenderit est possimus voluptatum, voluptatibus ab vitae accusantium ea quia. Harum nisi voluptatibus corporis molestiae voluptas asperiores vitae temporibus iste voluptatem provident, quod id ex doloremque quis. Veniam eos, nihil reiciendis explicabo voluptatum quasi vitae accusamus similique neque culpa voluptate consequuntur vero error aperiam. Magnam nisi, earum debitis culpa. Quasi modi, maiores exercitationem voluptatum. Quia, nisi. Vitae cum repellendus soluta reprehenderit animi, hic quas ipsam totam! Impedit veritatis consequuntur commodi vel autem culpa nesciunt eos, totam sapiente alias cumque perferendis minus corporis facere minima ducimus hic aliquam recusandae eaque eveniet veniam? Quidem esse, natus laudantium deleniti hic tempore et voluptas in, modi, fuga est nemo! Nobis impedit cumque iste harum, optio velit minima ducimus sapiente omnis excepturi totam consequatur vel dolorem. Nobis officiis optio facere minima, error architecto voluptatibus et impedit. Repellendus perspiciatis officiis facilis voluptatum beatae, maxime minima excepturi dolorem porro reprehenderit tenetur voluptates earum maiores quaerat ipsam, itaque numquam ea odio. Aperiam minus et quisquam dolor, recusandae voluptatum, hic laborum perferendis culpa nulla obcaecati est explicabo eum eveniet ad fugiat, saepe accusamus, voluptates in incidunt. Autem repellendus nisi asperiores incidunt laudantium harum, quasi suscipit et nihil, quibusdam dolores, corporis quos. Porro, quos, excepturi. Aliquid minima officia accusamus veritatis? Odit impedit facere dolorem expedita aperiam quae accusamus, necessitatibus unde dicta recusandae eos libero. Quia possimus accusamus laboriosam aspernatur quidem sit eos beatae alias repellat suscipit voluptas deserunt dolores fuga rem consequatur necessitatibus dignissimos autem, voluptatum dolorum asperiores, reprehenderit maxime. Officiis perspiciatis, dignissimos a debitis, at alias nulla non voluptas deleniti quaerat ea reprehenderit quisquam eius corrupti quas suscipit molestiae dolorum dolores veniam voluptatibus. Odio ullam ea voluptatibus modi iure! Distinctio dicta exercitationem accusamus perferendis maiores ipsum magnam accusantium pariatur. Quibusdam animi eaque, delectus aliquid rem ea laudantium doloribus aut, quasi accusamus necessitatibus. Quisquam reprehenderit laboriosam dolorum dolorem doloribus, ex atque vero eaque voluptas, suscipit eveniet similique nostrum iste, eligendi mollitia commodi laborum quae eius totam quia esse cupiditate est voluptatem. Odit magni consequatur quae sapiente, veritatis amet. Asperiores et repudiandae necessitatibus tenetur provident magnam eos ducimus autem doloremque, quas, mollitia soluta, quisquam exercitationem nesciunt blanditiis! Maiores ipsam porro, asperiores rerum culpa nemo dolorum, iure quod illum, vitae cumque quam distinctio aliquam incidunt ex tempora rem nesciunt accusantium. Assumenda accusamus amet, voluptates explicabo tempore delectus laboriosam a veniam similique nostrum culpa, quaerat debitis exercitationem eum pariatur deleniti fugit quam ex, quasi! Assumenda libero accusantium, aperiam. Odit dolorum eum cupiditate, voluptate accusamus beatae totam est ratione fugit soluta iste ut architecto distinctio nam eaque tenetur ullam dignissimos non vel magnam natus. Odit iure dolores deserunt illum assumenda, beatae eligendi facere libero explicabo, commodi possimus. Tenetur corporis, aliquam quasi velit est expedita tempora.</p>
+    </section>
+</body></html>

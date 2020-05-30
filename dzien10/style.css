@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: verdana;
+}
+
+header div {
+    width: 20%;
+    height: 200px;
+    background-color: royalblue;
+    float: left;
+    margin: 2.5%
+        /*    display: inline-block;* - przestarzałe gunwo i robi marginesy */
+}
+
+header div:nth-child(1) {
+    background-color: greenyellow;
+}
+
+header div:nth-child(2) {
+    background-color: cornflowerblue;
+}
+
+header div:nth-child(3) {
+    background-color: goldenrod;
+}
+
+header div:nth-child(4) {
+    background-color: crimson;
+}
+
+header div:hover {
+    filter: invert();
+}
+
+/*czyszczenie floatów, można też nadać h headerowi, albo opcje overflow:hidden, aaaale to jest najlepsza opcja*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0 10px 50px;
+    margin: 10px 0 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    margin-left: 20px;
+
+}
+
+nav ul li a {
+    display: block;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: gray;
+    color: yellow;
+    border-color: yellow;
+}
+
+div.blog {
+    margin-top: 30px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main {
+    float: left;
+    width: 65%;
+    padding: 0px 20px 0 20px;
+}
+
+article h1 {
+    text-transform: uppercase;
+}
+
+article img {
+    width: 200px;
+    float: left;
+    margin: 20px;
+}
+
+article p {
+    margin-top: 20px;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+section.contact {
+    background-color: #ddd;
+    padding: 15px;
+}
+
+.contact p {
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    margin: 10px 0;
+}
+
+.contact li i {
+    margin-right: 20px;
+    color: #333;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
