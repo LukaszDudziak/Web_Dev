@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .board {
+            width: 400px;
+            margin: 100px auto 50px auto;
+            border: 3px solid black;
+            font-size: 0;
+        }
+
+        .board div {
+            /* float: left; */
+            display: inline-block;
+            width: 20%;
+            height: calc(400px / 5);
+        }
+
+        .board div:nth-child(even) {
+            background-color: #000;
+        }
+
+        /* .board::after {
+            content: "";
+            display: block;
+            clear: both;
+        } */
+
+        h1 {
+            text-align: center;
+            font-family: arial;
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <h1>Szachy</h1>
+</body>
+
+</html>
